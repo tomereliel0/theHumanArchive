@@ -2,6 +2,7 @@ import { useRouter } from "next/router"
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '/styles/Home.module.css'
+import Footer from "../components/footer"
 
 function Search(){
     const router = useRouter()
@@ -23,14 +24,13 @@ function Search(){
 
     <main className={styles.main}>
         <h1 className={styles.title}>
-            Search for a <a href="https://nextjs.org">HUMAN!</a>
+            Search for a <a href="/search">HUMAN!</a>
         </h1>
         <div>
             <input type="text" id="searchParam" name="searchParam"></input>
             <button onClick={search}>Search</button>
         </div>
     </main>
-    
     </>
 
 }

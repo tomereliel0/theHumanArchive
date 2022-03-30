@@ -17,3 +17,13 @@ model Human {
   phone String
   tags String
 }
+
+model Post {
+  pid String @id @default(cuid())
+  date String
+  firstName String
+  lastName String
+  uid String
+  content String
+  tags String
+}
