@@ -6,8 +6,6 @@ import styles from '/styles/Home.module.css'
 
 
 function Footer(){
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     return <>
      <footer className={styles.footer}>
       <Link href='/addContent'><button>Add Content And Make Human Record</button></Link><br />

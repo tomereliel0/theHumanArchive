@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,19 +8,19 @@ datasource db {
 }
 
 model Human {
-  hid String @id @default(cuid())
+  hid       String @id @default(cuid())
   firstName String
-  lastName String
-  phone String
-  tags String
+  lastName  String
+  phone     String
+  tags      String
 }
 
 model Post {
-  pid String @id @default(cuid())
-  date String
+  pid       String @id @default(cuid())
+  date      String
   firstName String
-  lastName String
-  uid String
-  content String
-  tags String
+  lastName  String
+  uid       String
+  content   String
+  tags      String
 }
